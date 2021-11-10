@@ -1,0 +1,251 @@
+/*===================*/
+/*=    CSS reset    =*/
+/*===================*/
+
+html, body, div, span, h2, h4, hr, img, table, tr, td, header, nav, footer, p
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  line-height: 1.5;
+}
+
+img
+{
+  max-width: 80%;
+}
+
+/*====================================*/
+/*=    Styles relevant everywhere    =*/
+/*====================================*/
+
+/* the header would shift slightly if the scrollbar were allowed to disappear */
+html
+{
+  overflow-y: scroll;
+}
+
+
+body
+{
+  padding-bottom: 20px;  /* leaves some space at the bottom of the page */
+  width: 100%;
+  font-family: Lato, Helvetica, sans-serif;
+  font-size: 12pt;
+  font-weight:normal
+}
+
+h1
+{
+text-align:center;
+/*font-style:normal;
+font-family:"Josefin sans", sans-serif;
+font-weight:300*/
+/*margin-top: 40px;*/
+font-style:normal;
+font-family:"EB Garamond", serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+}
+
+h2
+{
+margin-top: 40px;
+font-style:normal;
+font-family:"EB Garamond", serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+/* all links will be maroon, and displayed without an underline, hover grey */
+a:link,
+a:visited
+{
+  color: #993333;
+  text-decoration: none;
+}
+
+a:hover,
+a:visited:hover
+{
+  color: #cccccc;
+  text-decoration: none;
+}
+
+
+hr
+{
+  width: 100%;
+  height: 2px;
+  background-color: #999999;
+  a
+}
+
+
+nav
+{
+ 	text-align: center; /* center aligns nav bar */
+ 	margin: 0 auto;
+ 	padding: 0 50px;   /* side padding should match that of the content div */
+	width: 600px;      /* width should match that of the content div */	
+	line-height: 1.5; /* pads nav bar */
+}
+
+
+/* suppresses bullets and all other list formatting */
+nav ul
+{
+ 	margin: 0 auto 0 auto;
+ 	padding: 0;
+ 	border: 0;
+ 	list-style: none;
+ 	display: inline;
+}
+
+
+/* spaces nav links away from each other */
+nav li
+{
+  margin: 0 30px;
+  display: inline-block;
+}
+
+
+
+#content
+{
+  margin: 0 auto;          /* centers the content div on the page */
+  padding: 20px 50px 0px;  /* makes room for the header, leaves some space at the sides of the page */
+  width: 600px;
+}
+
+
+
+/* spacing between entries of a list */
+li
+{
+  margin-top: 15px;
+}
+
+
+/* prevents space between borders of adjacent table cells */
+/* 
+table
+{
+  border-collapse: collapse;
+}
+ */
+
+
+/* makes table header cells left-aligned and non-bold */
+th
+{
+  text-align: left;
+  font-weight: normal;
+}
+
+
+
+
+
+/*==========================================*/
+/*=    Styles relevant on the home page    =*/
+/*==========================================*/
+
+#portrait {
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	width:100%;
+	height:auto; }
+
+
+#contactinfo td,
+#contactinfo th
+{
+  padding: 0 15px 15px 0;
+}
+
+
+/*====================================*/
+/*=    Styles relevant on music page    =*/
+/*====================================*/
+
+#navmus {
+	width: 100px;
+	float: left;
+	padding: 5px;
+	}
+
+#sectionmus {
+	width: 500px;
+	float: left;
+	padding: 10px;
+	}
+
+
+
+/*=======================================*/
+/*=    Styles relevant in the footer    =*/
+/*=======================================*/
+
+/*
+footer
+{
+  padding: 3px;
+  border: 2px solid #999999;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 8pt;
+  background-color: #ffffff;
+}
+*/
+
+/*  by default, put the footer on the bottom  */
+/*  right, immediately after the content div  */ 
+/*
+footer
+{
+  float: right;
+  margin: 80px 10px 10px 10px;
+}
+*/
+
+/*  however, on devices with screens of width > 1024px,  */
+/*  fix the footer in the bottom right of the screen     */
+/*  (1025 chosen to rule out almost all mobile devices,  */
+/*  whose browsers don't play well with fixed elements)  */
+/*
+@media (min-device-width: 1025px)
+{
+  footer
+  {
+    float: none;
+    margin: 0;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+
+footer img
+{
+  vertical-align: text-bottom;
+  margin: 2px 0;
+}
+*/
+
+#code_links a
+{
+  margin: 0 3px;
+}
